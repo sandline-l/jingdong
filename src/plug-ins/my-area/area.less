@@ -1,0 +1,55 @@
+
+
+
+#location{
+    .wrap{
+        float: right;
+        width: 70px;
+        height: 30px;
+        position: relative;
+        .nowarea{
+            height: 100%;
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+        .areaList{
+            display: none;
+            padding: 10px;
+            position: absolute;
+            top: 30px;
+            left: 0;
+            background-color: #fff;
+            z-index: 100;
+            .areaitem{
+                width: 70px;
+                padding: 10px;
+                display: inline-block;
+                cursor: pointer;
+                a{
+                    color: #999;
+                    display: inline-block;
+                    line-height: 30px;
+                    width: 100%;
+                }
+                &:hover{
+                    background-color: #ccc;
+                    a{
+                        color: #f40;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+#location .wrap .areaList .areaitem.area-active{
+    background-color: red;
+    a{
+        color: #fff;
+    }
+}
+
